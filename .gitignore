@@ -1,0 +1,107 @@
+# Public and derived data
+Data/**
+!Data/README.md
+results/**
+!results/README.md
+
+# Single-cell matrices and serialized analysis objects
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.mtx
+*.mtx.gz
+*.rds
+*.rda
+*.RData
+*.npz
+*.npy
+*.zarr/
+
+# Trained models and checkpoints
+*.ckpt
+*.pt
+*.pth
+models/
+model/
+checkpoints/
+lightning_logs/
+
+# Generated figures and design files
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.gif
+*.svg
+*.pdf
+*.eps
+*.ai
+
+# Archives and compressed data
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# Office documents (the marker workbook is a tracked configuration file)
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+!config/cell_type_markers.xlsx
+
+# Generated output directories
+outputs/
+output/
+figures/**/output/
+figures/**/outputs/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Python and Conda environments
+.venv/
+venv/
+env/
+.conda/
+
+# R session and project files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# Temporary files and logs
+tmp/
+.tmp/
+temp/
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+
+# IDE and operating-system metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
