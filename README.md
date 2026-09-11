@@ -92,13 +92,3 @@ python tools/validate_repository.py
 ```
 
 If `Rscript` is not on `PATH`, set `COCHLEA_RSCRIPT` to the executable first. Several figure scripts also support `--check-inputs`.
-
-## Reproducibility notes requiring manuscript decisions
-
-- The archived integration inputs contain normalized, non-integer values in `.X` and no usable raw-count layer, while the current scVI/scANVI code applies a negative-binomial model to `.X`. Reproducing the existing figures and performing a methodologically standard raw-count scVI analysis are therefore not the same task; the latter requires rebuilding count layers and rerunning integration.
-- E9.5, E16.5 and P14 use the shared `single_sample` batch label in the all-stage integration instead of a stage-qualified source-sample label.
-- Embryonic Kruskal–Wallis and branch-dependent tests are cell-level analyses without a sample/animal covariate.
-- Hair-cell GO/KEGG enrichment currently uses the package-default background rather than an explicitly supplied DGT-derived universe.
-- The manuscript reports Python 3.13, whereas the checked analysis environment is Python 3.11.15.
-
-These points should be resolved in the Methods or by reanalysis before the repository is described as a complete end-to-end reproduction package.
